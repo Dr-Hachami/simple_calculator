@@ -1,5 +1,5 @@
 # Simple Calculator
-![Calculator Demo](images/calculator-demo.mp4)
+![Calculator Demo](images/demo_vid.mp4)
 
 A simple calculator web application built with HTML, CSS, and JavaScript.
 
