@@ -1,0 +1,98 @@
+/* This is the CSS file for the elegant calculator styling. */
+
+/* Global styles for the entire document */
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the calculator */
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 360px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the result display area */
+.result {
+    grid-column: 1 / span 4;
+    text-align: right;
+    background-color: #e4e4e4;
+    color: #333;
+    padding: 10px;
+    font-size: 36px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Styling for the operator buttons */
+.orange-box {
+    background-color: #ff8c66;
+    color: #fff;
+}
+
+/* Styling for the number buttons */
+.greey-box {
+    background-color: #666;
+    color: #fff;
+}
+
+/* Styling for the big-size buttons (clear and zero) */
+.big-box {
+    font-size: 24px;
+}
+
+/* Hover styles for buttons */
+.orange-box:hover, .big-box:hover, .greey-box:hover {
+    background-color: #e05a3d;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Styling for the equal button */
+.equal {
+    background-color: #ff8c66;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Hover style for the equal button */
+.equal:hover {
+    background-color: #e05a3d;
+    transform: scale(1.05);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Styling for the calculator title */
+.title {
+    grid-column: 1 / span 4;
+    text-align: center;
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Styling for the container div */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
